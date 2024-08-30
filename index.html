@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/1be5955dd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <div class="logo" onclick="home()">
+                    <a href="#header"><span>R</span>anjit.</a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Under-Graduate Student</p>
+                <h1><span>Ranjit</span> Raj Nahak</h1>
+            </div>
+         </div>
+    </div>
+<!--------------About Me-------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row1">
+                <div class="about-col-1">
+                    <img src="Images/Screenshot_20240814_163312.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Computer Science and Engineering student with a keen
+                        interest in Artificial Intelligence, Machine Learning, and Data Science. I am
+                        actively engaged in honing my skills in these domains. My enthusiasm for these
+                        fields is evident in my commitment to continuous learning and professional
+                        development.
+                        </p>
+                    <div class="row2">
+                        <div class="about-col-21">
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                        </div>
+                        <div class="about-col-22">
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Data Science</span><br>Understanding insights of data and predicting future</li><br>
+                                    <li><span>Data Analysis</span><br>Analyzing and Visualizing Data</li><br>
+                                    <li><span>Machine Learning</span><br>Predicting Data</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2024</span><br>Data Science Intern at IIT Hyderabad</li><br>
+                                    <li><span>2024</span><br>Data Analyst Intern at Accenture</li><br>
+                                    <li><span>2024</span><br>Artificial Intelligence Intern at Cognizant</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>B.Tech</span><br>Parala Maharaja Engineering College, Berhampur</li><br>
+                                    <li><span>12th</span><br>Kendriya Vidyalaya Puri</li><br>
+                                    <li><span>10th</span><br>Kendriya Vidyalaya Puri</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------Services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <h2>Data Science</h2>
+                <p>Data science is an interdisciplinary academic field
+                     that uses statistics, scientific computing, scientific 
+                     methods, processes, scientific visualization, algorithms 
+                     and systems to extract or extrapolate knowledge and 
+                     insights from potentially noisy, structured, or unstructured
+                      data.</p>
+                <a href="https://en.wikipedia.org/wiki/Data_science" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis</h2>
+                <p>Data analysis is the process of inspecting, cleansing, 
+                    transforming, and modeling data with the goal of discovering 
+                    useful information, informing conclusions, and supporting
+                     decision-making. Data analysis has multiple facets and 
+                     approaches, encompassing diverse techniques under a variety 
+                     of names, and is used in different business, science, and 
+                     social science domains. In today's business world, data
+                      analysis plays a role in making decisions more scientific
+                       and helping businesses operate more effectively.</p>
+                <a href="https://en.wikipedia.org/wiki/Data_analysis" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Machine Learning</h2>
+                <p>Machine learning (ML) is a field of study in artificial 
+                    intelligence concerned with the development and study of statistical
+                     algorithms that can learn from data and generalize to unseen data
+                      and thus perform tasks without explicit instructions. Recently, 
+                      artificial neural networks have been able to surpass many previous
+                       approaches in performance.</p>
+                <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------- My Work ------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Power BI.png">
+                <div class="layer">
+                    <h3>Power Bi Dashboard</h3>
+                    <p>In this dashboard, I analyzed an HR dataset of Attrition of employee
+                    </p>
+                    <a href="https://www.linkedin.com/posts/ranjit-raj-nahak-9abb23231_dataanalytics-powerbi-rishabhmishra-activity-7203413851315294208-sLGY?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Tableau Dashboard.png">
+                <div class="layer">
+                    <h3>Tableau Dashboard</h3>
+                    <p> I analyzed a Customer Sales dataset, visualized the relations of findings
+                    </p>
+                    <a href="https://www.linkedin.com/posts/ranjit-raj-nahak-9abb23231_tableau-dataanalysis-activity-7202390654734249985-YLc5?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Excel Dashboard.png">
+                <div class="layer">
+                    <h3>Excel Dashboard</h3>
+                    <p>Excel Dashboard on the Road Accident Dataset
+                    </p>
+                    <a href="https://www.linkedin.com/posts/ranjit-raj-nahak-9abb23231_dataanalysis-excel-datatutorials-activity-7200574587594526720-emZT?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/in/ranjit-raj-nahak-9abb23231/recent-activity/all" target="_blank" rel="noopener noreferrer" class="btn">See more</a>
+    </div>
+</div>
+<!------------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sniperranjit10@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9583601004</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Resume Canva.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ranjit. designed by Ranjit Raj Nahak</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCLD8TApb0ZS7CjYWmtD7aBLL1jXPJTLAyUTlojmWfTHxKrtWb6b7a6EagDqthX-3Uug/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
