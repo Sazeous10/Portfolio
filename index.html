@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/1be5955dd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <div class="logo" onclick="home()">
+                    <a href="#header"><span>R</span>anjit.</a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span>Ranjit</span> Raj Nahak</h1>
+                <p>Software Developer</p>
+            </div>
+         </div>
+    </div>
+<!--------------About Me-------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row1">
+                <!-- <div class="about-col-1">
+                    <img src="Images/Screenshot_20240814_163312.png">
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Detail-oriented and performance-driven Computer Science undergraduate with hands-on experience in full-stack web development, software testing,
+                        and data analytics. Proficient in MERN stack, Python, SQL, and software testing methodologies. Demonstrated success in building scalable web
+                        applications and delivering optimized code with enhanced performance and user experience. Leveraging strong problem-solving skills, testing
+                        strategies, and development expertise in building high-quality software solutions. 
+                    </p>
+                    <div class="row2">
+                        <div class="about-row-21">
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                        </div>
+                        <div class="about-col-22">
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br>Full-stack developer with a strong foundation in building dynamic, scalable, and user-centric web applications using JavaScript, React, Node.js, Express.js, MongoDB, and SQL. Proven experience delivering real-world projects across domains like PG booking, AI image generation, healthcare, and library management. Skilled in developing responsive frontends, building RESTful APIs, managing databases, and deploying full-stack applications using the MERN stack and PHP/MySQL.</li><br>
+                                    <li><span>SAP ABAP Back-End Developer</span><br>Certified SAP Associate in ABAP Cloud with foundational knowledge of back-end development in SAP environments. Skilled in creating and managing custom reports, data dictionary objects, and modular programming in ABAP. Familiar with building scalable and efficient solutions in SAP systems, aligned with business logic and enterprise-grade standards.</li><br>
+                                    <li><span>Artificial Intelligence and Machine Learning</span><br>Hands-on experience in developing AI/ML applications with a strong foundation in Python, data preprocessing, model training, and evaluation. Proficient in using libraries like NumPy, Pandas, Scikit-learn, XGBoost, SHAP, and LIME for predictive modeling and explainable AI. Built real-world projects including a mental health prediction system, an AI-powered image generation platform. Skilled in visualizing insights through Matplotlib and Plotly, and deploying ML models via web interfaces for user interaction.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Sep 2023 - Dec 2023 </span><br>Web Development Intern at Internshala</li><br>
+                                    <li><span>Jun 2024 - Aug 2024 </span><br>Data Analytics Internship at IBM</li><br>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>B.Tech</span><br>Parala Maharaja Engineering College, Berhampur | CGPA - 8.6</li><br>
+                                    <li><span>12th</span><br>Kendriya Vidyalaya Puri | Percentage - 90.6</li><br>
+                                    <li><span>10th</span><br>Kendriya Vidyalaya Puri | Percentage - 92.4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------Skills----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-window-maximize"></i>
+                <h2>WEB DEVELOPMENT</h2>
+                <p>Web development is the work involved in developing a website
+                     for the Internet (World Wide Web) or an intranet (a private network).
+                     Web development can range from developing a simple single static 
+                     page of plain text to complex web applications, electronic businesses, 
+                     and social network services.</p>
+                <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <h2>SAP ABAP</h2>
+                <p>ABAP (Advanced Business Application Programming, originally 
+                    Allgemeiner Berichts-Aufbereitungs-Prozessor, German for 
+                    "general report preparation processor") is a high-level 
+                    programming language created by the German software company 
+                    SAP SE. It is currently positioned, alongside Java, as the 
+                    language for programming the SAP NetWeaver Application Server, 
+                    which is part of the SAP NetWeaver platform for building 
+                    business applications.</p>
+                <a href="https://https://en.wikipedia.org/wiki/ABAP" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>VERSION CONTROL</h2>
+                <p>Version control (also known as revision control, source control, 
+                    and source code management) is the software engineering practice 
+                    of controlling, organizing, and tracking different versions in 
+                    history of computer files; primarily source code text files, but 
+                    generally any type of file. Version control is a component of 
+                    software configuration management.
+
+Version control includes viewing old versions and enables reverting a file to a previous version.</p>
+                <a href="https://en.wikipedia.org/wiki/Data_analysis" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>AIML</h2>
+                <p>Machine learning (ML) is a field of study in artificial 
+                    intelligence concerned with the development and study of statistical
+                     algorithms that can learn from data and generalize to unseen data
+                      and thus perform tasks without explicit instructions. Recently, 
+                      artificial neural networks have been able to surpass many previous
+                       approaches in performance.</p>
+                <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------- My Work ------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <h1>AI Image Generating Website</h1>
+                <img src="Images/AI Image Generating Website.png">
+                <div class="layer">
+                    <h3>AI Image Generating Website</h3>
+                    <p>A MERN stack website that generates images from prompts with help of an AI
+                    </p>
+                    <a href="https://imagifyai.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h1>Book Library</h1>
+                <img src="Images/BookLibrary.jpg">
+                <div class="layer">
+                    <h3>Book Library</h3>
+                    <p>
+                        A full-stack Book Library application built with React (JavaScript, CSS) for the frontend, Node.js for the backend server, and MongoDB as the database for storing books.
+                    </p>
+                    <a href="https://github.com/Sazeous10/Book-Library" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h1>Hospital Management System</h1>
+                <img src="Images/HospitalManagementSystem.jpg">
+                <div class="layer">
+                    <h3>Hospital Management System</h3>
+                    <p> The Hospital Management System is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js). This system provides a seamless and efficient way to manage hospital operations, including doctor registrations, patient records, and appointment bookings.
+                    </p>
+                    <a href="https://github.com/Sazeous10/Hospital-Management-System" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h1>MS Excel Dashboard</h1>
+                <img src="Images/Excel Dashboard.png">
+                <div class="layer">
+                    <h3>Excel Dashboard</h3>
+                    <p>Excel Dashboard on the Road Accident Dataset
+                    </p>
+                    <a href="https://www.linkedin.com/posts/ranjit-raj-nahak-9abb23231_dataanalysis-excel-datatutorials-activity-7200574587594526720-emZT?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sniperranjit10@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9583601004</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Ranjit - Resume3.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ranjit. designed by Ranjit Raj Nahak</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCLD8TApb0ZS7CjYWmtD7aBLL1jXPJTLAyUTlojmWfTHxKrtWb6b7a6EagDqthX-3Uug/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
